@@ -1,0 +1,31 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color-white: #fff;
+    --color-laranja-brilhante: #ff1e00;
+    --color-destaque-verde: #59ce8f;
+
+}
+.header {
+    height: 20em;
+    width: 100vw;
+
+}
+.logo {
+/* HENDAMART */
+display: flex;
+align-items: center;
+position: absolute;
+font-family: 'Inter';
+font-weight: bold;
+font-size: 20px;
+line-height: 47px;
+text-decoration: none;
+color: var(--color-laranja-brilhante);
+}
+.logo span {
+color: var(--color-destaque-verde);
+}
