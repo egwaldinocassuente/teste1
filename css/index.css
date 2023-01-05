@@ -2,23 +2,36 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root {
     --color-white: #fff;
+    --color-grey: rgb(246, 246, 246);
     --color-laranja-brilhante: #ff1e00;
     --color-destaque-verde: #59ce8f;
 
 }
-.header {
+
+
+header {
+    padding: 0px 150px;
     height: 20em;
     width: 100vw;
-
+    border: 1px solid red;
 }
-.logo {
-/* HENDAMART */
+
+.header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px 25px 0px;
+    border-bottom: 1px solid var(--color-destaque-verde);
+}
+
+.logo_header {
+/* HENDA */
 display: flex;
 align-items: center;
-position: absolute;
 font-family: 'Inter';
 font-weight: bold;
 font-size: 20px;
@@ -26,6 +39,59 @@ line-height: 47px;
 text-decoration: none;
 color: var(--color-laranja-brilhante);
 }
-.logo span {
+.logo_header span {
 color: var(--color-destaque-verde);
+}
+
+.logo_header:hover {
+    color: var(--color-destaque-verde);
+}
+.logo_header span:hover {
+    color: var(--color-laranja-brilhante);
+}
+
+/* Searchbar */
+.searchbar_header form {
+    display: flex; 
+    align-items: center;
+}
+.searchbar_header input {
+    height: 40px;
+    width: 25vw;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px solid var(--color-laranja-brilhante);
+    background-color: var(--color-grey);
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+}
+.searchbar_header button {
+    height: 40px;
+    width: 5vw;
+    margin-left: -1vw;
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+    color: var(--color-white);
+    background-color: var(--color-laranja-brilhante);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.icons_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-destaque-verde);
+    width: 9vw;
+}
+
+.icon_heart {
+    display: flex;
+    align-items: center;
+}
+
+.icon_person {
+    display: flex;
+    align-items: center;
 }
