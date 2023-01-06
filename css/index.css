@@ -3,11 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter';
+    
 }
 :root {
     --color-white: #fff;
     --color-grey: rgb(246, 246, 246);
     --color-laranja-brilhante: #ff1e00;
+    --color-laranja-brilhante2: #ec3a22;
     --color-destaque-verde: #59ce8f;
 
 }
@@ -15,9 +18,8 @@
 
 header {
     padding: 0px 150px;
-    height: 20em;
+    height: 7em;
     width: 100vw;
-    border: 1px solid red;
 }
 
 .header {
@@ -25,7 +27,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 25px 0px 25px 0px;
-    border-bottom: 1px solid var(--color-destaque-verde);
 }
 
 .logo_header {
@@ -66,6 +67,9 @@ color: var(--color-destaque-verde);
     padding-left: 10px;
 }
 .searchbar_header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 40px;
     width: 5vw;
     margin-left: -1vw;
@@ -73,17 +77,17 @@ color: var(--color-destaque-verde);
     border: none;
     color: var(--color-white);
     background-color: var(--color-laranja-brilhante);
-    font-size: 18px;
-    font-weight: 600;
     cursor: pointer;
 }
 
-.icons_header {
+.icons_header ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--color-destaque-verde);
     width: 9vw;
+}
+.icons_header a {
+    color: var(--color-destaque-verde);
 }
 
 .icon_heart {
@@ -94,4 +98,60 @@ color: var(--color-destaque-verde);
 .icon_person {
     display: flex;
     align-items: center;
+    
+}
+
+
+
+/* Estilo da navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 150px;
+    overflow: hidden;
+    background-color: var(--color-laranja-brilhante);
+
+}
+
+  /* Navbar links */
+  .navbar a {
+    color: var(--color-white);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .navbar a:hover {
+    background-color: var(--color-laranja-brilhante2);
+  }
+ 
+  /* Main Banner */
+
+  main {
+    padding: 50px 0px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+.left_content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.thumb {
+    display: inline;
+    align-items : center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
 }
